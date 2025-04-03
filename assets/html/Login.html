@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title> Login </title>
+
+</head>
+
+<body>
+
+    <main class="mainLogInPage">
+
+        <form class="formLogInPage" onsubmit="return logIn()" action="../php/Inicio.php">
+
+            <h1> <img class="adjustLogo1" src="../img/EcoTech Innovations Logo1.png" alt="EcoTech Innovations Logo"> Faça o Login </h1>
+
+            <label for="email"> Email: </label>
+            <input class="inputLogInPage" type="email" id="email" name="email" placeholder="Digite seu email..." required>
+
+            <label for="password"> Password: </label>
+            <input class="inputLogInPage" type="password" id="password" name="password" placeholder="Digite sua senha..." required>
+
+            <span id="errorMessage"></span>
+
+            <button class="buttonLogIn" type="submit"> Entrar </button>
+
+        </form>
+
+        <div>
+
+            <button id="showEmailAndPassword" class="buttonShowOrHideLogInKeys" type="button"> Mostrar email e senha... </button>
+            <div id="divWithAnswers" class="divWithAnswersNone">
+
+                <p> Email: administrador@admin.com </p>
+                <p> Password: 1234Adm! </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    
+    <script src="../js/Login.js"></script>
+
+</body>
+
+</html>

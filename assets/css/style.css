@@ -1,0 +1,703 @@
+/* O Syle será utilizado para todos os arquivos, não é recomendado, principalmente quando tem vários arquivos associados a ele, por questões de organização e otimização. Irei separar o Style por categorias.
+
+
+Style base para todos os arquivos ⬇️ */
+html, body {
+
+    margin: 0;
+    padding: 0;
+
+    height: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button {
+
+    border: solid 1px black;
+    border-radius: 20px;
+
+    margin: 0;
+
+}
+
+label { margin: .5rem; }
+
+.aBackButton {
+
+    background-color: rgba(139, 0, 0, 0.603);
+    color: white;
+
+    text-decoration: none;
+    text-align: center;
+
+    border: none;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+    font-size: 25px;
+
+    width: 20%;
+
+    margin: 2em;
+
+    align-self: center;
+
+    transition: transform .5s ease .1s, box-shadow .5s ease .1s, background-color .5s ease;
+
+}
+
+.aBackButton:hover {
+
+    transform: scale(1.2);
+
+    background-color: rgba(255, 0, 0, 0.63);
+
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+/* Style da página de Login a seguir
+
+Começando pelas tags base, tipo: body, main e etc... ⬇️ */
+.mainLogInPage {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10em;
+
+    height: auto;
+    min-height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(circle, rgb(0, 0, 95), darkblue);
+
+}
+
+.formLogInPage {
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+
+    font-size: 20px;
+
+    gap: 1em;
+
+    width: auto;
+    min-width: 400px;
+
+}
+
+
+/* Style dos inputs ⬇️ */
+.inputLogInPage {
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    height: 25px;
+
+    opacity: 60%;
+
+    margin-top: -1.5rem;
+
+    transition: transform .3s ease, opacity .5s ease .1s;
+
+}
+
+.inputLogInPage::placeholder {
+
+    color: black;
+
+    padding: .2rem;
+
+}
+
+.inputLogInPage:hover {
+
+    transform: scale(1.02);
+
+    opacity: 100%;
+
+}
+
+
+/* Style dos botões ⬇️ */
+.buttonLogIn {
+
+    background: linear-gradient(0deg, blue, aqua);
+    color: white;
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+    font-size: 25px;
+
+    width: 25%;
+
+    align-self: center;
+
+    transition: transform .5s ease .1s, box-shadow .5s ease .1s;
+
+}
+
+.buttonLogIn:hover {
+
+    transform: scale(1.1);
+
+    animation: buttonLogIn_GradientAnimation 1s ease-in-out infinite;
+
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.buttonShowOrHideLogInKeys {
+
+    background: none;
+
+    color: white;
+    
+    padding: 0;
+
+    border: solid 1px black;
+    border-radius: 0;
+
+    transition: color .2s ease, border .2s ease;
+
+}
+
+.buttonShowOrHideLogInKeysLockedWhite {
+
+    background: none;
+
+    color: white;
+    
+    padding: 0;
+
+    border: solid 1px white;
+    border-radius: 0;
+
+}
+
+.buttonShowOrHideLogInKeys:hover {
+
+    color: black;
+
+    border: solid 1px white;
+
+}
+
+
+/* Styles para complementação ⬇️ */
+.errorMessage {
+
+    background-color: red;
+    color: darkred;
+
+    align-self: center;
+
+    text-align: center;
+
+    border: solid 2px darkred;
+    border-radius: 10px;
+
+    width: 60%;
+
+    padding: .1em;
+
+}
+
+.divWithAnswersNone { display: none; }
+
+.divWithAnswersBlock {
+
+    display: block;
+
+    border: solid 1px white;
+
+    color: white;
+
+    padding: .5rem;
+
+    font-size: small;
+    font-weight: light;
+
+    cursor: default;
+
+}
+
+.adjustLogo1 {
+
+    margin-bottom: -35px;
+
+    height: auto;
+    
+    width: 100px;
+
+}
+
+/* Termino dos Style utilizados na página de Login aqui
+
+
+Style da página inicial a seguir
+
+Começando pelas tags base, tipo: body, main e etc... ⬇️ */
+.bodyMainPage {
+
+    height: auto;
+    min-height: 100vh;
+    
+    background: linear-gradient(to top, blue, aqua);
+
+}
+
+.mainHeader {
+
+    display: flex;
+
+    gap: 1em;
+
+    align-items: center;
+
+    height: auto;
+    min-height: 6em;
+
+    padding: .5rem;
+
+    box-shadow: 0px 5px 100px 0px rgba(0, 0, 0, 0.75);
+
+    background: linear-gradient(to left, lightgreen, green);
+
+}
+
+/* Style dos botões ⬇️ */
+.aLogOut {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 20px;
+
+}
+
+.buttonDropdown {
+
+    background:none;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+}
+
+
+/* Styles para complementação ⬇️ */
+.adjustLogo2 {
+
+    height: auto;
+
+    width: 100px;
+
+}
+
+.divDropdown {
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+.dropdownMenuVisible {
+
+    position: absolute;
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 20px;
+    
+    visibility: visible;
+
+    background-color: white;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+}
+
+.dropdownMenuVisible > li {
+
+    padding: 10px 2px;
+
+    transition: transform .1s ease;
+
+}
+
+.dropdownMenuVisible > li > a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    display: block;
+
+}
+
+.dropdownMenu {
+
+    position: absolute;
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 20px;
+
+    opacity: 0;
+    
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    background-color: white;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+.dropdownMenu > li {
+
+    padding: 10px 2px;
+
+    transition: transform .1s ease;
+
+}
+
+.dropdownMenu > li > a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    display: block;
+
+}
+
+.divDropdown:hover .dropdownMenu {
+
+    opacity: 1;
+
+    visibility: visible;
+    
+    transform: translateY(0);
+
+}
+
+.dropdownMenu > li:hover { transform: scale(1.05); }
+
+.dropdownMenuVisible > li:hover { transform: scale(1.05); }
+
+
+/* Termino dos Style utilizados na página de inicial aqui
+
+
+Style base para todos os formulários a seguir 
+
+Começando pelas tags base, tipo: body, main e etc... ⬇️ */
+.mainForms {
+
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    min-height: 100vh;
+
+    align-items: center;
+
+    animation: mainForms_BackgroundAnimation 20s linear infinite;
+
+}
+
+.formBase {
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+
+    border-radius: 10px;
+
+    padding: 1em;
+    margin: .5rem;
+
+    width: auto;
+    min-width: 50rem;
+
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.75);
+
+    background: linear-gradient(to top, aqua, green);
+
+}
+
+
+/* Style dos inputs ⬇️ */
+.inputForms {
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    margin-bottom: 1em;
+
+    font-size: 15px;
+
+    resize: vertical;
+
+    height: 30px;
+
+    width: 100%;
+
+    opacity: 80%;
+
+    transition: transform .3s ease, opacity .5s ease .1s;
+
+}
+
+.inputForms::placeholder {
+
+    color: black;
+
+    padding: .2rem;
+
+}
+
+.inputForms:hover {
+
+    transform: scale(1.01);
+
+    opacity: 100%;
+
+}
+
+
+/* Style dos botões ⬇️ */
+.buttonFormsRegister {
+    
+    background-color: lightblue;
+    color: black;
+
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+
+    font-size: 25px;
+
+    width: 30%;
+
+    cursor: pointer;
+
+    transition: transform .5s ease .1s, box-shadow .5s ease .1s, background-color 1s ease, color .5s ease .2s;
+
+}
+
+.buttonFormsClear {
+    
+    background-color: lightblue;
+    color: black;
+
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+
+    font-size: 25px;
+
+    width: 30%;
+
+    cursor: pointer;
+
+    transition: transform .5s ease .1s, box-shadow .5s ease .1s, background-color 1s ease, color .5s ease .2s;
+
+}
+
+.buttonFormsRegister:hover {
+
+    transform: scale(1.05);
+
+    background-color: green;
+    color: white;
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.buttonFormsClear:hover {
+
+    transform: scale(1.05);
+
+    background-color: red;
+    color: white;
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+
+/* Styles para complementação ⬇️ */
+.divRegisterAndClear {
+
+    display: flex;
+
+    width: auto;
+    min-width: 100%;
+
+    justify-content: space-evenly;
+
+    margin-top: 1rem;
+
+}
+
+.divRegisteredData {
+
+    margin: 1em;
+
+    padding: 1rem;
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+}
+
+.divRegisteredData > h3 {
+
+    text-align: center;
+
+}
+
+/* Termino dos Style utilizados nos formulários aqui */
+
+.mainConsult {
+    
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    height: auto;
+
+    min-height: 100vh;
+
+    animation: mainForms_BackgroundAnimation 20s linear infinite;
+
+}
+
+.divConsult {
+
+    background-color: white;
+
+    height: auto;
+
+    max-width: 50em;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    padding: 1rem;
+
+}
+
+.divContent {
+
+    background-color: lightgreen;
+
+    text-align: left;
+
+    padding: .5rem;
+
+}
+
+.divContent > h2 {
+
+    justify-self: center;
+
+}
+
+/* Animações em geral ⬇️  */
+
+@keyframes buttonLogIn_GradientAnimation {
+
+    0% { background: linear-gradient(0deg, blue, aqua); }
+    
+    5% { background: linear-gradient(18deg, blue, aqua); }
+    
+    10% { background: linear-gradient(36deg, blue, aqua); }
+    
+    15% { background: linear-gradient(54deg, blue, aqua); }
+    
+    20% { background: linear-gradient(72deg, blue, aqua); }
+    
+    25% { background: linear-gradient(90deg, blue, aqua); }
+    
+    30% { background: linear-gradient(108deg, blue, aqua); }
+    
+    35% { background: linear-gradient(126deg, blue, aqua); }
+    
+    40% { background: linear-gradient(144deg, blue, aqua); }
+    
+    45% { background: linear-gradient(162deg, blue, aqua); }
+    
+    50% { background: linear-gradient(180deg, blue, aqua); }
+    
+    55% { background: linear-gradient(198deg, blue, aqua); }
+    
+    60% { background: linear-gradient(216deg, blue, aqua); }
+    
+    65% { background: linear-gradient(234deg, blue, aqua); }
+    
+    70% { background: linear-gradient(252deg, blue, aqua); }
+    
+    75% { background: linear-gradient(270deg, blue, aqua); }
+    
+    80% { background: linear-gradient(288deg, blue, aqua); }
+    
+    85% { background: linear-gradient(306deg, blue, aqua); }
+    
+    90% { background: linear-gradient(324deg, blue, aqua); }
+    
+    95% { background: linear-gradient(342deg, blue, aqua); }
+    
+    100% { background: linear-gradient(360deg, blue, aqua); }
+
+}
+
+@keyframes mainForms_BackgroundAnimation {
+
+    0% { background: #4CAF50; }
+    
+    50% { background: #2196F3; }
+    
+    100% { background: #4CAF50; }
+
+}
