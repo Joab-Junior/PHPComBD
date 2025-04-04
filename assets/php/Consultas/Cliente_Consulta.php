@@ -24,7 +24,7 @@
 
                 <?php
 
-                    include_once('../config/connection.php');
+                    include_once('../../config/connection.php');
 
                     try {
 
@@ -47,6 +47,18 @@
                             echo "<br><b>Email: </b>".$row['email'];
                             echo "<br>";
 
+                ?>
+
+                            <div class="divRegisterAndClear">
+
+                                <button class="buttonFormsRegister" onclick="window.location.href='../../config/alterar/alterarCliente.php?id=<?php echo $row['codigo'];?>'"> Alterar </button>
+
+                                <button class="buttonFormsClear" onclick="window.location.href='../../config/excluir/excluirCliente.php?id=<?php echo $row['codigo'];?>'"> Excluir </button>
+
+                            </div>
+
+                <?php
+                        
                         }
 
                     } catch(PDOException $e) {
@@ -57,13 +69,15 @@
 
                 ?>
 
+               
+
             </div>
             
         </div>
 
         <a class="aBackButton" href="../Inicio.php"> Voltar </a>
 
-    </main> 
+    </main>   
 
 </body>
 

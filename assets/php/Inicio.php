@@ -36,21 +36,37 @@
 
         <div class="divDropdown">
 
-        <button id="button2" class="buttonDropdown"> Consulta </button>
+            <button id="button2" class="buttonDropdown"> Consulta </button>
 
-        <ul id="menu2" class="dropdownMenu">
+            <ul id="menu2" class="dropdownMenu">
 
-            <li> <a href="./Consultas/Cliente_Consulta.php"> Cliente </a> </li>
-            <li> <a href="./Consultas/Funcionario_Consulta.php"> Funcionário </a> </li>
-            <li> <a href="./Consultas/Fornecedor_Consulta.php"> Fornecedor </a> </li>
-            <li> <a href="./Consultas/Produtos_Consulta.php"> Produto </a> </li>
-            <li> <a href="./Consultas/Usuario_Consulta.php"> Usuário </a> </li>
+                <li> <a href="./Consultas/Cliente_Consulta.php"> Cliente </a> </li>
+                <li> <a href="./Consultas/Funcionario_Consulta.php"> Funcionário </a> </li>
+                <li> <a href="./Consultas/Fornecedor_Consulta.php"> Fornecedor </a> </li>
+                <li> <a href="./Consultas/Produtos_Consulta.php"> Produto </a> </li>
+                <li> <a href="./Consultas/Usuario_Consulta.php"> Usuário </a> </li>
 
-        </ul>
+            </ul>
 
         </div>
 
         <a class="aLogOut" href="../html/Login.html"> Sair </a>
+
+        <div class="divDropdown">
+
+            <button id="createDB" onclick="window.location.href='./config/sistemaBD/createDB.php'"> CreateDB </button>
+
+            <ul id="menu3" class="dropdownMenu">
+
+                <li> <a href="./config/sistemaBD/createTableCliente.php"> Table Cliente </a> </li>
+                <li> <a href="./config/sistemaBD/createTableFornecedor.php"> Table Fornecedor </a> </li>
+                <li> <a href="./config/sistemaBD/createTableFuncionario.php"> Table Funcionário </a> </li>
+                <li> <a href="./config/sistemaBD/createTableProduto.php"> Table Produto </a> </li>
+                <li> <a href="./config/sistemaBD/createTableUsuario.php"> Table Usuário </a> </li>
+
+            </ul>
+
+        </div>
 
     </header>
 

@@ -36,12 +36,58 @@ try {
     
     echo "Functionary Table Created successfully";
 
+    echo "
+
+        <noscript>
+
+            <a href='./createTableProduto.php'> Clique aqui para continuar </a>
+
+        </noscript>
+
+    
+        <script>
+
+            setTimeout(() => {
+            
+                alert('Continuando...');
+                window.location.href = './createTableProduto.php';
+            
+            }, 2000);
+
+
+        </script>
+
+    ";
+
 } catch(PDOException $e) {
 
     echo "Creation failed: " . $e->getMessage();
 
+    echo "
+
+        <noscript>
+
+            <a href='../../Inicio.php'>Clique aqui para voltar ao inicio</a>
+            
+        </noscript>
+    
+        <script>
+
+            setTimeout(() => {
+            
+                alert('Voltando ao inicio...');
+                window.location.href = '../../Inicio.php';
+            
+            }, 2000);
+
+        </script>
+
+    ";
+
 }
 
 $conn = null;
+
+exit;
 
 ?>

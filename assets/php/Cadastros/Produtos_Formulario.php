@@ -79,7 +79,7 @@
 
                     );
 
-                    include_once('../config/connection.php');
+                    include_once('../../config/connection.php');
 
                     if ($conn) {
 

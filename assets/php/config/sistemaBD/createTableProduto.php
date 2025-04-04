@@ -33,12 +33,57 @@ try {
     
     echo "Product Table Created successfully";
 
+    echo "
+
+        <noscript>
+
+            <a href='./createTableUsuario.php'> Clique aqui para continuar </a>
+
+        </noscript>
+
+    
+        <script>
+
+            setTimeout(() => {
+            
+                alert('Continuando...');
+                window.location.href = './createTableUsuario.php';
+            
+            }, 2000);
+
+        </script>
+
+    ";
+
 } catch(PDOException $e) {
 
     echo "Creation failed: " . $e->getMessage();
 
+    echo "
+
+        <noscript>
+
+            <a href='../../Inicio.php'>Clique aqui para voltar ao inicio</a>
+            
+        </noscript>
+    
+        <script>
+
+            setTimeout(() => {
+            
+                alert('Voltando ao inicio...');
+                window.location.href = '../../Inicio.php';
+            
+            }, 2000);
+
+        </script>
+
+    ";
+
 }
 
 $conn = null;
+
+exit;
 
 ?>
